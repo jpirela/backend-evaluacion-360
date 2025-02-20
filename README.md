@@ -39,13 +39,15 @@ Antes de comenzar, asegúrate de tener instalado:
    yarn start
    ```
 
-4. Inicia el servidor (depuración):
+5. Inicia el servidor (depuración):
 
    ```sh
    yarn dev
    ```   
 
    El servidor estará disponible en `http://localhost:3030`.
+
+6. En MongoDB crea las bases de datos users y evaluations
 
 ## 📂 Estructura del Proyecto
 
@@ -57,37 +59,28 @@ C:.
 │   README.md
 │   server.js
 │   yarn.lock
-│
 ├───api
 │   ├───controllers
 │   │       apiController.js
-│   │
 │   ├───models
 │   │       Employee.js
 │   │       Evaluation.js
 │   │       Feedback.js
-│   │
 │   └───routes
 │           apiRoutes.js
-│
 ├───auth
 │   ├───controllers
 │   │       authController.js
-│   │
 │   ├───models
 │   │       User.js
 │   │       UserLog.js
-│   │       
 │   └───routes
 │           authRoutes.js
-│
 ├───config
 │       database.js
-│
 ├───middleware
 │       auth.js
 │       authorize.js
-│
 └───tests
         apiRoutes.test.js
         setup.js
