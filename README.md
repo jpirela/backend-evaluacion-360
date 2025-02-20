@@ -16,7 +16,7 @@ Antes de comenzar, asegúrate de tener instalado:
 
    ```sh
    git clone https://github.com/jpirela/backend-evaluacion-360.git
-   cd server
+   cd backend
    ```
 
 2. Instala las dependencias:
