@@ -46,7 +46,6 @@ exports.register = async (req, res) => {
 };
 
 exports.login = async (req, res) => {
-  console.log(req.db);
   const User = getUserModel(req.db);
   const { email, password } = req.body;
 
