@@ -28,7 +28,7 @@ Antes de comenzar, asegúrate de tener instalado:
 3. Crea un archivo `.env` en la raíz del proyecto con las siguientes variables:
 
    ```env
-   MONGODB_URI=mongodb://127.0.0.1:27017/
+   MONGODB_URI=mongodb://127.0.0.1:27017
    PORT=3030
    SECRET_KEY="supersecretkey"
    ```
