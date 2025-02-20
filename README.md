@@ -47,7 +47,20 @@ Antes de comenzar, asegúrate de tener instalado:
 
    El servidor estará disponible en `http://localhost:3030`.
 
-6. En MongoDB crea las bases de datos users y evaluations
+6. En MongoDB crea las bases de datos users y agregas el administrador
+
+   ```sh
+   mongosh
+   use users
+   db.users.insertOne({
+     first_name: "Nombre-del-Administrador",
+     last_name: "Apellido_del_Administrador",
+     email: "admin@example.com",
+     password: "password",
+     role: "Admin"
+   })
+   ```
+La base de datos evaluations se creará automáticamente cuando se registre la primera evaluación   
 
 ## 📂 Estructura del Proyecto
 
